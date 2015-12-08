@@ -13,7 +13,7 @@ namespace InstanceServer {
             while (true) {
                 if (_srv.Pending()) {
                     var _client = _srv.AcceptTcpClient();
-                    Console.WriteLine("Connected!");
+                    Console.WriteLine("Connected!"); 
                     var _buffer = new byte[1];
                     Console.WriteLine("Waiting for client activity...");
                     while (true) {
